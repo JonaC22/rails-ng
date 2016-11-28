@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails railsExample: development" uuid="3c06cba5-887e-4557-81ce-0719aaa604c9">
+      <database-info product="PostgreSQL" version="9.3.13" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>shine</user-name>
+      <user-password>dfd9dfc2dfc3dfc4dfcf</user-password>
+      <resolve-scope>shine_development:public,shine</resolve-scope>
+    </data-source>
+    <data-source name="Rails railsExample: test" uuid="c1ce873a-0dc6-4c8d-a1e9-8404fd47f488">
+      <database-info product="PostgreSQL" version="9.3.13" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>shine</user-name>
+      <user-password>dfd9dfc2dfc3dfc4dfcf</user-password>
+      <resolve-scope>shine_test:public,shine</resolve-scope>
+    </data-source>
+    <data-source name="Rails railsExample: production" uuid="8477d9c7-ceca-4271-b0a7-dba53336da87">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>shine</user-name>
+      <user-password>dfd9dfc2dfc3dfc4dfcf</user-password>
+    </data-source>
+  </component>
+</project>
