@@ -1,6 +1,10 @@
 # Heroku URL
 http://rails-ng.herokuapp.com/
 
+## Sign in
+
+Email must be from company (ie. xyz@example.com)
+
 ## Routes
 
 /customers
