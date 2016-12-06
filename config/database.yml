@@ -5,12 +5,14 @@
 #   gem 'sqlite3'
 #
 default: &default
+  adapter: postgresql
+
 
 development:
-  database: shine_development
-  adapter: postgresql
+  <<: *default
   pool: 5
   timeout: 5000
+  database: shine_development
   username: shine
   password: shine
 
@@ -20,6 +22,8 @@ development:
 test:
   <<: *default
   database: shine_test
+  username: shine
+  password: shine
 
 production:
   <<: *default
