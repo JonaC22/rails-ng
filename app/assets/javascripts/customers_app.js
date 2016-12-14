@@ -6,13 +6,16 @@ app.config([
         $routeProvider.when("/", {
             controller: "CustomerSearchController",
             templateUrl: "customer_search.html"
+        }).when("/:id", {
+            controller: "CustomerDetailController",
+            templateUrl: "customer_detail.html"
         });
     }
 ]);
 
 app.controller("CustomerSearchController", [
-    "$scope", "$http",
-    function ($scope, $http) {
+    "$scope", "$http", "$location",
+    function ($scope, $http, $location) {
 
         var page = 0;
 
@@ -44,5 +47,25 @@ app.controller("CustomerSearchController", [
             page = page + 1;
             $scope.search($scope.keywords);
         };
+
+        $scope.viewDetails = function (customer) {
+            $location.path("/" + customer.id);
+        }
+    }
+]);
+
+app.controller("CustomerDetailController", [
+    "$scope", "$http", "$routeParams",
+    function ($scope, $http, $routeParams) {
+        var customerId = $routeParams.id;
+        $scope.customer = {};
+        $http.get(
+            "/customers/" + customerId + ".json"
+        ).then(function (response) {
+                $scope.customer = response.data;
+            }, function (response) {
+                alert("There was a problem: " + response.status);
+            }
+        );
     }
 ]);
