@@ -1,4 +1,7 @@
-# Heroku URL
+# rails-ng
+[![Build Status](https://travis-ci.org/JonaC22/rails-ng.svg?branch=master)](https://travis-ci.org/JonaC22/rails-ng)
+
+## Heroku URL
 http://rails-ng.herokuapp.com/
 
 ## Sign in
