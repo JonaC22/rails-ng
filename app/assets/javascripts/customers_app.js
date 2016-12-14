@@ -1,4 +1,4 @@
-var app = angular.module('customers', []);
+var app = angular.module('customers', ['ngRoute']);
 
 app.controller("CustomerSearchController", [
     "$scope", "$http",
@@ -23,14 +23,14 @@ app.controller("CustomerSearchController", [
             );
         };
 
-        $scope.previousPage = function() {
+        $scope.previousPage = function () {
             if (page > 0) {
                 page = page - 1;
                 $scope.search($scope.keywords);
             }
         };
 
-        $scope.nextPage = function() {
+        $scope.nextPage = function () {
             page = page + 1;
             $scope.search($scope.keywords);
         };
